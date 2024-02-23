@@ -1,0 +1,229 @@
+{
+	"info": {
+		"_postman_id": "1c318a6f-a220-43fa-b8e3-f83b6868c2d9",
+		"name": "api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31485345",
+		"_collection_link": "https://orange-firefly-888395.postman.co/workspace/Air_Api~9f99bf9f-d8b4-4343-b6dd-4db49921abbb/collection/31485345-1c318a6f-a220-43fa-b8e3-f83b6868c2d9?action=share&source=collection_link&creator=31485345"
+	},
+	"item": [
+		{
+			"name": "all-data",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L3Zpc2FfdGJwL0Fpcl9BcGkvSG90ZWwxMS9wdWJsaWMvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE3MDU5ODk5OTUsImV4cCI6MTcwNTk5MzU5NSwibmJmIjoxNzA1OTg5OTk1LCJqdGkiOiI2SWQwQjNiWUtsM0xFY0ZxIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.ZErzdTtqa0AG1nfGSCm6NXNWhCdRiZtsIQilIWbLt4Q"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost/visa_tbp/Air_Api/Hotel11/public/api/auth/manage-product"
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "admin@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost/visa_tbp/Air_Api/Hotel11/public/api/auth/login"
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "farid",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "farid@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost/visa_tbp/Air_Api/Hotel11/public/api/auth/register"
+			},
+			"response": []
+		},
+		{
+			"name": "single-data-show",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L3Zpc2FfdGJwL0Fpcl9BcGkvSG90ZWwxMS9wdWJsaWMvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE3MDYwMTEwNTksImV4cCI6MTcwNjAxNDY1OSwibmJmIjoxNzA2MDExMDU5LCJqdGkiOiJUTGdzMUcxcnl4Vm5jbXdvIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.S8kNUt-Y5U317zSQpTKXZJ2JK_HVrOgQKNazhCYGiJo"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost/visa_tbp/Air_Api/Hotel11/public/api/auth/show/1900"
+			},
+			"response": []
+		},
+		{
+			"name": "search",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L3Zpc2FfdGJwL0Fpcl9BcGkvSG90ZWwxMS9wdWJsaWMvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE3MDYwMTM5ODQsImV4cCI6MTcwNjAxNzU4NCwibmJmIjoxNzA2MDEzOTg0LCJqdGkiOiI4UVJ1dThXMzFleW1kY0NWIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.5rhcsDFwcFECPxolHXXYzgnj7LI_IP_m82JylMUnEuY"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/visa_tbp/Air_Api/Hotel11/public/api/auth/search/?query=AAm",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"visa_tbp",
+						"Air_Api",
+						"Hotel11",
+						"public",
+						"api",
+						"auth",
+						"search",
+						""
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "AAm"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L3Zpc2FfdGJwL0Fpcl9BcGkvSG90ZWwxMS9wdWJsaWMvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE3MDYwMTM5ODQsImV4cCI6MTcwNjAxNzU4NCwibmJmIjoxNzA2MDEzOTg0LCJqdGkiOiI4UVJ1dThXMzFleW1kY0NWIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.5rhcsDFwcFECPxolHXXYzgnj7LI_IP_m82JylMUnEuY"
+					}
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost/visa_tbp/Air_Api/Hotel11/public/api/auth/destroy/1848"
+			},
+			"response": []
+		},
+		{
+			"name": "data-all",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L3Zpc2FfdGJwL0Fpcl9BcGkvSG90ZWwxMS9wdWJsaWMvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE3MDY5NTAxNzIsImV4cCI6MTcwNjk1Mzc3MiwibmJmIjoxNzA2OTUwMTcyLCJqdGkiOiJJNXZMMmJVcEI5d2EzcXVSIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.UbSrc-U99zc4Du8VBpROkVyQWYueV3KLeUYiDPJQolw"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost/visa_tbp/Air_Api/Hotel11/public/api/auth/index"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L3Zpc2FfdGJwL0Fpcl9BcGkvSG90ZWwxMS9wdWJsaWMvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE3MDY5NTAxNzIsImV4cCI6MTcwNjk1Mzc3MiwibmJmIjoxNzA2OTUwMTcyLCJqdGkiOiJJNXZMMmJVcEI5d2EzcXVSIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.UbSrc-U99zc4Du8VBpROkVyQWYueV3KLeUYiDPJQolw"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost/visa_tbp/Air_Api/Hotel11/public/api/auth/indexa"
+			},
+			"response": []
+		}
+	]
+}
